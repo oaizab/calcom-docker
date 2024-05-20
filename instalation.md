@@ -25,9 +25,9 @@ cp .env.example .env
 > 
 > `NEXTAUTH_URL` is the location of the authentication server. It should be the same as `{NEXT_PUBLIC_WEBAPP_URL}/api/auth`. (optional)
 > 
-> `NEXTAUTH_SECRET` is a secret key used by the authentication server. (required)
+> `NEXTAUTH_SECRET` is a secret key used by the authentication server. (required) `openssl rand -base64 32`
 > 
-> `CALENDSO_ENCRYPTION_KEY` is a secret key used by the calendar server. (required)
+> `CALENDSO_ENCRYPTION_KEY` is a secret key used by the calendar server. (required) `openssl rand -base64 32`
 > 
 > `DATABASE_URL` is the URL of the database. (required)
 > 
